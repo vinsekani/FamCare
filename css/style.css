@@ -1,3 +1,172 @@
+.body-dash {
+  display: flex;
+  background-color: rgb(242, 242, 242);
+  border-top: 1em solid rgb(0, 128, 128);
+}
+
+.sidebar {
+  width: 300px;
+  background-color: rgb(0, 128, 128);
+  color: #fff;
+  padding: 20px;
+  height: 930px;
+}
+
+.sidebar p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.header-info p {
+  margin: 5px 0;
+}
+
+.header-info {
+  display: flex;
+  gap: 10px;
+}
+
+.mid-nav {
+  background-color: white;
+  padding: 10px;
+  color: rgb(0, 128, 128);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.john-profile img {
+  border-radius: 50%;
+}
+
+.header-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content-left {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 700px;
+  height: 700px;
+}
+
+.all-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile h2 {
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+.general-info {
+  grid-column: span 2;
+}
+
+.general-info h3 {
+  margin-bottom: 15px;
+}
+
+.general-info table {
+  width: 100%;
+}
+
+.general-info td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 800px;
+}
+
+.stat-item {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.visitors {
+  grid-column: span 2;
+  margin-top: 20px;
+  left: 70%;
+  right: 50%;
+}
+
+.visitors h3 {
+  margin-bottom: 10px;
+}
+
+.visitors table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.visitors td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.visitors td:first-child {
+  text-align: left;
+}
+
 .about-famcare {
   align-items: center;
   text-align: center;

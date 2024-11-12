@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="bodys">
+    <div class="wrapper-login">
+        <form id="form" action="">
+            <h1>Login</h1>
+            
+            <div class="login-box login-username">
+                <p>Username</p>
+                <input type="text" id="username" placeholder="Enter username">
+                <i class='bx bxs-user'></i>
+                <div class="error" id="usernameError"></div>
+            </div>
+        
+            <div class="login-box login-password">
+                <p>Password</p>
+                <input type="password" id="password" placeholder="Enter password">
+                <i class='bx bxs-lock-alt'></i>
+                <div class="error" id="passwordError"></div>
+            </div>
+        
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+        
+      </div>
+    <script src="./js/validationlogin.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,61 @@
+@use "../../utilities/variables" as*;
+
+#benefits{
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10em;
+    h3{
+        margin-bottom:10px;
+        font-size: 2em;
+    }
+    p{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+.benefits{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+
+.img-benefits{
+    border:none;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.img-benefits:hover{
+transform: scale(1.1);
+z-index: 2;
+}
+
+
+#img-benefits{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h4{
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+
+    button{
+        padding: 10px 50px;
+        border-radius: 10px;
+        color: white;
+        background-color: $primary-color;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+
+        }
+    }
+}

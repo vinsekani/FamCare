@@ -1,3 +1,23 @@
+.about-famcare {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 8em;
+}
+.about-famcare h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+#about-famcare {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+#about-famcare p {
+  font-size: 18px;
+}
+
 .hero {
   width: 100%;
   height: 80vh;

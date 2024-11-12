@@ -1,3 +1,57 @@
+.hero {
+  width: 100%;
+  height: 80vh;
+  background: url(/images/pexels-rdne-6129683.jpg);
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  color: white;
+  line-height: 1em;
+}
+
+.hero-content {
+  background: transparent;
+}
+
+.container button {
+  padding: 20px 70px;
+  background-color: rgb(0, 128, 128);
+  border-radius: 10px;
+  border: none;
+  margin-top: 1em;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: white;
+  color: rgb(0, 128, 128);
+  border: 1px solid rgb(0, 128, 128);
+}
+
 nav {
   display: flex;
   justify-content: space-between;

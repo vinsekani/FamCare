@@ -149,3 +149,33 @@
   .register-link p a:hover{
     text-decoration: underline;
   }
+
+.login-box {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.login-box input, .login-box select {
+  border: 2px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-box .error {
+  color: red;
+  font-size: 12px;
+  display: none;
+  margin-top: 5px;
+}
+
+.login-box.error input,
+.login-box.error select {
+  border-color: red;
+}
+
+.login-box.success input,
+.login-box.success select {
+  border-color: green;
+}

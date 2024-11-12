@@ -149,3 +149,33 @@
   .register-link p a:hover{
     text-decoration: underline;
   }
+
+.input-box {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-box input, .input-box select {
+  border: 2px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-box .error {
+  color: red;
+  font-size: 12px;
+  display: none; 
+  margin-top: 5px;
+}
+
+.input-box.error input,
+.input-box.error select {
+  border-color: red;
+}
+
+.input-box.success input,
+.input-box.success select {
+  border-color: green;
+}

@@ -18,6 +18,28 @@
   font-size: 18px;
 }
 
+.services {
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10em;
+}
+.services h3 {
+  font-size: 2em;
+}
+
+#services {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  align-items: center;
+  margin-top: 40px;
+}
+#services p {
+  font-size: 18px;
+}
+
 .hero {
   width: 100%;
   height: 80vh;

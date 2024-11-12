@@ -74,6 +74,22 @@
   border: 1px solid rgb(0, 128, 128);
 }
 
+.privacy {
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10em;
+}
+.privacy h3 {
+  font-size: 2em;
+}
+.privacy p {
+  font-size: 18px;
+  margin-top: 1em;
+}
+
 .services {
   width: 50%;
   margin: 0 auto;

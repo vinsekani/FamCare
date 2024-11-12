@@ -1,0 +1,29 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+.testimonials{
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10em;
+    h3{
+        font-size: 2em;
+    }
+}
+
+
+
+.test-containers{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.containers{
+    background-color: white;
+    padding: 20px;
+    p{
+        font-size: 18px;
+    }
+}

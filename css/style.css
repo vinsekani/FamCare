@@ -203,6 +203,31 @@
   transition: all 0.2s linear;
 }
 
+.testimonials {
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10em;
+}
+.testimonials h3 {
+  font-size: 2em;
+}
+
+.test-containers {
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.containers {
+  background-color: white;
+  padding: 20px;
+}
+.containers p {
+  font-size: 18px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;

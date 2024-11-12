@@ -72,6 +72,59 @@
   border: 1px solid rgb(0, 128, 128);
 }
 
+.key-features {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10em;
+  justify-content: center;
+}
+
+.fa-solid {
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.accordion {
+  max-width: 300px;
+  width: 50%;
+  background-color: rgb(242, 242, 242);
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.accordion .accordion-content {
+  margin: 20px;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+
+.accordion-content.open {
+  padding-bottom: 10px;
+}
+
+.accordion-content header {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  transition: all 0.2s linear;
+}
+
+.accordion-content.open header {
+  min-height: 35px;
+}
+
+.accordion-content .description {
+  padding: 0 15px;
+  height: 0;
+  transition: all 0.2s linear;
+}
+
 nav {
   display: flex;
   justify-content: space-between;

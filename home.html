@@ -11,30 +11,25 @@
 
         <!-- NAV SECTION -->
         <section class="nav-section">
-            <nav>
-                <div class="fam-logo"><img src="images/new_transparent-removebg.png" width="100wh"></div>
+            <nav id="nav">
+            <div class="home-nav">
+                <div class="fam-logo"><a href="#nav"><img src="images/new_transparent-removebg.png" width="100wh"></a></div>
               
-                <!-- Desktop Navigation -->
                 <div class="top-nav">
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about-famcare">About</a></li>
+                    <li><a href="#key-features">Key Features</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
                   </ul>
                 </div>
               
-                <button class="nav-btn">Sign Up</button>
-              
-                <!-- Hamburger Menu for Mobile -->
-                <div class="hamburger-menu" onclick="toggleMobileNav()">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                    <button class="login-register-btn nav-btn" onclick="toggleOptions(this)">Login/Register</button>
               
 
-              </nav>
+            </div>
+        </nav>
         </section>
 
 
@@ -42,7 +37,12 @@
      <section class="hero">
         <div class="container">
             <h1>Stay Connected with <br> Family Care</br></h1>
-            <button><a href="login.html"> Get started</a></button>
+            <div class="login-register-container">
+                <button class="login-register-btn" onclick="toggleOptions(this)">Login/Register</button>
+              </div>
+              
+              
+            <!-- <button><a href="login.html"> Get started</a></button> -->
         </div>
         
      </section>
@@ -60,7 +60,7 @@
       </section>
 
             <!-- KEYFEATURES -->
-            <section class="key-features">
+            <section id="key-features" class="key-features">
                 <div class="key-features-image"><img src="images/keyfeatures.jpg" width="720vh" height="450vh"></div>
         
                   <div class="accordion">
@@ -109,7 +109,7 @@
 
 
                     <!-- FAMCARE SERVICES -->
-      <section class="services">
+      <section id="service" class="services">
         <h3>FamCare Services</h3>
         <div id="services">
             <p id="responsive-bold">Real-Time Updates</p>
@@ -204,7 +204,7 @@
       </section>
 
            <!-- DATA PRIVACY SECTION -->
-    <section>
+    <section id="privacy">
         <div class="privacy">
             <h3>Your Data, Our Priority</h3>
             <p>At Family Care, we understand that privacy is paramount. Our platform is designed with robust security measures to ensure your sensitive information remains confidential and protected.

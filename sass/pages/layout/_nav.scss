@@ -1,10 +1,17 @@
 @use "../../utilities/variables"as*;
 
-nav{
+.home-nav{
+  width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    text-align: center;
+}
+
+
+.nav-btn{
+  position: relative;
 }
 
 
@@ -52,12 +59,10 @@ cursor: pointer;
 
 
 @media (max-width: 768px) {
-    /* Hide the top navigation on smaller screens */
     .top-nav ul {
       display: none;
     }
   
-    /* Style for mobile hamburger menu */
     .hamburger-menu {
       display: flex;
       flex-direction: column;
@@ -71,7 +76,6 @@ cursor: pointer;
       margin: 4px 0;
     }
   
-    /* Fullscreen overlay for mobile nav */
     .mobile-nav {
       position: fixed;
       top: 0;
@@ -88,7 +92,6 @@ cursor: pointer;
       transition: transform 0.3s ease-in-out;
     }
   
-    /* Show mobile nav when active */
     .mobile-nav.active {
       transform: translateX(0);
     }
@@ -108,10 +111,13 @@ cursor: pointer;
     .mobile-nav ul li a:hover {
       color: $primary-color;
     }
-  
-    /* Hide the original nav button */
     .nav-btn {
       display: none;
+    }
+
+    .home-nav{
+      width: 90%;
+        margin: 0 auto;
     }
   }
   

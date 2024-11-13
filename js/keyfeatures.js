@@ -1,4 +1,3 @@
-
 const accordionContent = document.querySelectorAll(".accordion-content")
 accordionContent.forEach((item, index) => {
     let header = item.querySelector("header")
@@ -35,3 +34,18 @@ function removeOpen(index1){
 function toggleMobileNav() {
   document.getElementById('mobileNav').classList.toggle('active');
 }
+
+function toggleOptions(button) {
+  if (button.innerHTML.includes('Hospital')) {
+    button.innerHTML = 'Login/Register';
+  } else {
+    button.innerHTML = `
+      Login/Register
+      <div class="sub-buttons">
+        <button class="hospital-btn"><a href="regester.html">Hospital</a></button>
+        <button class="individual-btn"><a href="individual.html">Individual</a></button>
+      </div>
+    `;
+  }
+}
+

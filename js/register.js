@@ -7,10 +7,13 @@ document.getElementById("form").addEventListener("submit", function(event) {
     const name = document.querySelector(".regester-name input");
     const phone = document.querySelector(".regester-number input");
     const email = document.querySelector(".regester-email input");
-    const county = document.getElementById("county");
     const hospital = document.querySelector(".regester-hospital input");
+    const password = document.querySelector(".register-password input")
+    const confirmPassword = document.querySelector(".confirm-password input")
   
     let isValid = true;
+
+
   
     if (name.value.trim() === "") {
       showError(name, "Name is required");
@@ -19,9 +22,9 @@ document.getElementById("form").addEventListener("submit", function(event) {
       showSuccess(name);
     }
   
-    const phonePattern = /^\d{10}$/;
+    const phonePattern = /^07\d{8}$/;
     if (!phonePattern.test(phone.value)) {
-      showError(phone, "Phone number must be 10 digits");
+      showError(phone, "Phone number must start with '07' and contain 10 digits");
       isValid = false;
     } else {
       showSuccess(phone);
@@ -38,12 +41,6 @@ document.getElementById("form").addEventListener("submit", function(event) {
       showSuccess(email);
     }
   
-    if (county.value === "Nairobi") {
-      showError(county, "Please select a county");
-      isValid = false;
-    } else {
-      showSuccess(county);
-    }
   
     if (hospital.value.trim() === "") {
       showError(hospital, "Hospital name is required");
@@ -51,10 +48,26 @@ document.getElementById("form").addEventListener("submit", function(event) {
     } else {
       showSuccess(hospital);
     }
+
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+    if (!passwordPattern.test(password.value)) {
+      showError(password, "Password must be at least 8 characters, include uppercase, lowercase, a number, and a special character");
+      isValid = false;
+    } else {
+      showSuccess(password);
+    }
+  
+    if (confirmPassword.value !== password.value) {
+      showError(confirmPassword, "Passwords do not match");
+      isValid = false;
+    } else {
+      showSuccess(confirmPassword);
+    }
   
     if (isValid) {
       document.getElementById("form").submit();
     }
+
   }
   
   function showError(input, message) {
@@ -75,3 +88,12 @@ document.getElementById("form").addEventListener("submit", function(event) {
     inputBox.classList.remove("error");
     errorDisplay.style.display = "none";
   }
+
+
+  
+
+
+
+
+
+  

@@ -58,6 +58,56 @@
     }
 }
 
+ .login-register-container {
+  position: relative;
+  display: inline-block;
+}
+
+.login-register-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-register-btn:hover {
+  background-color: white;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+}
+
+.sub-buttons {
+  display: none;
+  padding: 10px;
+  background-color: #007bff;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub-buttons button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color:rgb(52, 191, 193);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sub-buttons button:hover {
+  background-color: $primary-color;
+  color: white;
+}
+
+
 
 @media (max-width: 768px) {
     .hero {
@@ -76,3 +126,4 @@
       font-size: 16px; /* Adjust font size for better readability */
     }
   }
+

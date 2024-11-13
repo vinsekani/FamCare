@@ -27,3 +27,27 @@
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        width: 90%;
+        margin-top: 5em;
+    }
+
+    .testimonials h3 {
+        font-size: 1.5em;
+    }
+
+    .test-containers {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .containers {
+        padding: 15px;
+    }
+
+    .containers p {
+        font-size: 16px;
+    }
+}

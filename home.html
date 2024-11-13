@@ -12,20 +12,29 @@
         <!-- NAV SECTION -->
         <section class="nav-section">
             <nav>
-                <div class="fam-logo">
-                    <img src="images/new_transparent-removebg.png" alt="FAMCARE LOGO" width="150px" height="100px">
-                </div>
+                <div class="fam-logo"><img src="images/new_transparent-removebg.png" width="100wh"></div>
+              
+                <!-- Desktop Navigation -->
                 <div class="top-nav">
-                    <ul>
-                        <li><a href="#">About Famcare</a></li>
-                        <li><a href="#">Key Features</a></li>
-                        <i class="fa-solid fa-ellipsis"></i>
-                    </ul>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
                 </div>
-                <div>
-                    <button class="nav-btn"><a href="login.html"> Get started</a></button>
+              
+                <button class="nav-btn">Sign Up</button>
+              
+                <!-- Hamburger Menu for Mobile -->
+                <div class="hamburger-menu" onclick="toggleMobileNav()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-            </nav>
+              
+
+              </nav>
         </section>
 
 
@@ -52,7 +61,7 @@
 
             <!-- KEYFEATURES -->
             <section class="key-features">
-                <div><img src="images/keyfeatures.jpg" width="720vh" height="450vh"></div>
+                <div class="key-features-image"><img src="images/keyfeatures.jpg" width="720vh" height="450vh"></div>
         
                   <div class="accordion">
                     <h1>key Features </h3>
@@ -103,22 +112,22 @@
       <section class="services">
         <h3>FamCare Services</h3>
         <div id="services">
-            <p>Real-Time Updates</p>
+            <p id="responsive-bold">Real-Time Updates</p>
             <p>Receive instant health updates about your <br> loved ones directly from hospital staff.</br></p>
         </div>
 
         <div id="services">
-            <p>Daily Summaries</p>
+            <p id="responsive-bold">Daily Summaries</p>
             <p>Get comprehensive daily summaries of patient <br> conditions delivered right to you.</br></p>
         </div>
 
         <div id="services">
-            <p>Vitals Tracking</p>
+            <p id="responsive-bold">Vitals Tracking</p>
             <p>Monitor essential health metrics with our easy-<br>to-use vitals tracking feature.</br></p>
         </div>
 
         <div id="services">
-            <p>Emergency Alerts</p>
+            <p id="responsive-bold">Emergency Alerts</p>
             <p>Stay informed with immediate alerts for any <br>critical changes in patient status.</br></p>
         </div>
       </section>
@@ -131,7 +140,7 @@
             <div class="benefits">
                     <div class="img-benefits">
                         <div class="img-box">
-                            <img src="images/enhance communication.jpeg" alt="a patient communicating" width="382vh" height="250vh">
+                            <img src="images/enhance communication.jpeg" alt="a patient communicating" width="345vh" height="250vh">
                         </div>
                         <div id="img-benefits">
                             <h4>Enhanced Communication</h4>
@@ -142,7 +151,7 @@
     
                     <div class="img-benefits">
                         <div class="img-box">
-                            <img src="images/peace of mind.jpeg" alt="a patient communicating" width="382vh" height="250vh">
+                            <img src="images/peace of mind.jpeg" alt="a patient communicating" width="345vh" height="250vh">
                         </div>
                         <div id="img-benefits">
                             <h4>Peace of Mind</h4>
@@ -153,7 +162,7 @@
     
                     <div class="img-benefits">
                         <div class="img-box">
-                            <img src="images/comprihencive tracking.jpeg" alt="a patient communicating" width="382vh" height="250vh">
+                            <img src="images/comprihencive tracking.jpeg" alt="a patient communicating" width="345vh" height="250vh">
                         </div>
                         <div id="img-benefits">
                             <h4>Comprehensive Tracking</h4>

@@ -31,3 +31,7 @@ function removeOpen(index1){
         }
     })
 }
+
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('active');
+}

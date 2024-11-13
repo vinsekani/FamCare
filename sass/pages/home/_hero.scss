@@ -57,3 +57,22 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .hero {
+      height: 60vh;
+      padding: 0 2%;
+    }
+  
+    .hero h1 {
+      font-size: 3rem; /* Reduce font size for smaller screens */
+      line-height: 1.2em;
+      margin-bottom: 1em;
+    }
+  
+    .container button {
+      padding: 15px 40px; /* Reduce padding for the button */
+      font-size: 16px; /* Adjust font size for better readability */
+    }
+  }

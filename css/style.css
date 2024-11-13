@@ -109,6 +109,60 @@
   margin-left: 5px;
 }
 
+@media (max-width: 768px) {
+  .sidebar-accounts {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+  .linked-accounts {
+    max-width: 100%;
+    padding: 15px;
+    box-shadow: none;
+  }
+  .linked-accounts h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .active-patients {
+    align-items: flex-start;
+  }
+  .active-patients h4 {
+    font-size: 14px;
+  }
+  .add-button {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .account-item {
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .account-info i {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  .account-details strong {
+    font-size: 13px;
+  }
+  .account-details p {
+    font-size: 11px;
+  }
+  .account-actions {
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .account-actions .unlink {
+    padding: 4px 8px;
+    font-size: 11px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .account-actions a {
+    font-size: 11px;
+  }
+}
 .body-dash {
   display: flex;
   background-color: rgb(242, 242, 242);
@@ -348,13 +402,76 @@
   text-align: right;
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
+  .body-dash {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+  #sidebar-nav {
+    justify-content: center;
+  }
+  #sidebar-nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  #sidebar-nav ul li {
+    font-size: 16px;
+  }
+  .all-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-left {
+    width: 100%;
+    height: auto;
+  }
+  .mid-nav {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mid-nav h3 {
+    font-size: 10px;
+  }
+  .user-profile {
+    display: none;
+  }
   .stats {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
   .stat-item:nth-child(1) {
     grid-column: auto;
     grid-row: auto;
+    font-size: 1em;
+    padding: 20px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .visitor-section {
+    width: 100%;
+  }
+  .visitor-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .visitor-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .visit-time, .visit-date {
+    text-align: left;
+    font-size: 14px;
   }
 }
 .about-famcare {
@@ -377,6 +494,20 @@
   font-size: 18px;
 }
 
+@media (max-width: 768px) {
+  .about-famcare {
+    margin-top: 4em;
+  }
+  .about-famcare h3 {
+    font-size: 1.5em;
+  }
+  #about-famcare {
+    width: 80%;
+  }
+  #about-famcare p {
+    font-size: 16px;
+  }
+}
 #benefits {
   width: 60%;
   margin: 0 auto;
@@ -433,6 +564,32 @@
   border: 1px solid rgb(0, 128, 128);
 }
 
+@media screen and (max-width: 768px) {
+  #benefits {
+    width: 90%;
+    margin-top: 5em;
+  }
+  #benefits h3 {
+    font-size: 1.5em;
+  }
+  #benefits p {
+    font-size: 16px;
+  }
+  .benefits {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .img-benefits {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  #img-benefits h4 {
+    font-size: 1.5em;
+  }
+  #img-benefits button {
+    padding: 10px 30px;
+  }
+}
 .privacy {
   width: 50%;
   margin: 0 auto;
@@ -449,6 +606,18 @@
   margin-top: 1em;
 }
 
+@media screen and (max-width: 768px) {
+  .privacy {
+    width: 90%;
+    margin-top: 5em;
+  }
+  .privacy h3 {
+    font-size: 1.5em;
+  }
+  .privacy p {
+    font-size: 16px;
+  }
+}
 .services {
   width: 50%;
   margin: 0 auto;
@@ -471,6 +640,29 @@
   font-size: 18px;
 }
 
+@media (max-width: 768px) {
+  .services {
+    width: 80%;
+    margin-top: 5em;
+  }
+  .services h3 {
+    font-size: 1.5em;
+  }
+  #services {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    margin-top: 20px;
+  }
+  #services p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #responsive-bold {
+    font-weight: 1000;
+    text-decoration: underline;
+  }
+}
 .hero {
   width: 100%;
   height: 80vh;
@@ -525,6 +717,21 @@
   border: 1px solid rgb(0, 128, 128);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 0 2%;
+  }
+  .hero h1 {
+    font-size: 3rem; /* Reduce font size for smaller screens */
+    line-height: 1.2em;
+    margin-bottom: 1em;
+  }
+  .container button {
+    padding: 15px 40px; /* Reduce padding for the button */
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+}
 .key-features {
   width: 60%;
   margin: 0 auto;
@@ -578,6 +785,26 @@
   transition: all 0.2s linear;
 }
 
+@media (max-width: 768px) {
+  .key-features {
+    width: 90%;
+    margin-top: 5em;
+    flex-direction: column;
+  }
+  .accordion {
+    width: 80%;
+    margin: 15px auto;
+  }
+  .accordion-content header {
+    font-size: 16px;
+  }
+  .fa-solid {
+    font-size: 1.2em;
+  }
+  .key-features-image {
+    display: none;
+  }
+}
 .testimonials {
   width: 60%;
   margin: 0 auto;
@@ -603,6 +830,25 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .testimonials {
+    width: 90%;
+    margin-top: 5em;
+  }
+  .testimonials h3 {
+    font-size: 1.5em;
+  }
+  .test-containers {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .containers {
+    padding: 15px;
+  }
+  .containers p {
+    font-size: 16px;
+  }
+}
 footer {
   width: 70%;
   margin: 0 auto;
@@ -627,6 +873,26 @@ footer {
   margin-top: 2em;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    width: 90%;
+  }
+  .footer {
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+  .footer-icons {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-icons i {
+    font-size: 1.5em;
+  }
+  .copy-right p {
+    font-size: 16px;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -669,6 +935,61 @@ nav {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  /* Hide the top navigation on smaller screens */
+  .top-nav ul {
+    display: none;
+  }
+  /* Style for mobile hamburger menu */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 128, 128);
+    margin: 4px 0;
+  }
+  /* Fullscreen overlay for mobile nav */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  /* Show mobile nav when active */
+  .mobile-nav.active {
+    transform: translateX(0);
+  }
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .mobile-nav ul li a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  .mobile-nav ul li a:hover {
+    color: rgb(0, 128, 128);
+  }
+  /* Hide the original nav button */
+  .nav-btn {
+    display: none;
+  }
+}
 .bodys {
   display: flex;
   justify-content: center;
@@ -851,6 +1172,38 @@ nav {
   border-color: green;
 }
 
+@media (max-width: 768px) {
+  .wrapper-login {
+    width: 90%;
+    padding: 20px;
+  }
+  .wrapper-login h1 {
+    font-size: 28px;
+  }
+  .login-box {
+    margin: 20px 0;
+  }
+  .login-box input,
+  #county {
+    font-size: 14px;
+    padding: 15px 35px 15px 15px;
+  }
+  .login-box i {
+    right: 15px;
+    font-size: 18px;
+  }
+  .wrapper-login .remember-forgot {
+    font-size: 12px;
+    margin-top: 8em;
+  }
+  .wrapper-login .btn {
+    height: 40px;
+    font-size: 14px;
+  }
+  .wrapper-login .register-link {
+    font-size: 12px;
+  }
+}
 .bodys {
   display: flex;
   justify-content: center;
@@ -1033,6 +1386,44 @@ nav {
   border-color: green;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    width: 80%;
+    padding: 20px;
+    height: auto;
+  }
+  #form h1 {
+    margin-bottom: -35px;
+  }
+  .wrapper h1 {
+    font-size: 28px;
+  }
+  .input-box {
+    margin: 20px 0;
+  }
+  .input-box input,
+  #county {
+    font-size: 14px;
+    padding: 15px 35px 15px 15px;
+  }
+  .input-box i {
+    right: 15px;
+    font-size: 18px;
+  }
+  .input-box p {
+    margin-bottom: -5px;
+  }
+  .wrapper .remember-forgot {
+    font-size: 12px;
+  }
+  .wrapper .btn {
+    height: 40px;
+    font-size: 14px;
+  }
+  .wrapper .register-link {
+    font-size: 12px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

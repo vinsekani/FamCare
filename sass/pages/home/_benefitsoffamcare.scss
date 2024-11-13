@@ -59,3 +59,35 @@ z-index: 2;
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    #benefits {
+        width: 90%;
+        margin-top: 5em;
+    }
+
+    #benefits h3 {
+        font-size: 1.5em;
+    }
+
+    #benefits p {
+        font-size: 16px;
+    }
+    .benefits {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .img-benefits {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    #img-benefits h4 {
+        font-size: 1.5em;
+    }
+
+    #img-benefits button {
+        padding: 10px 30px;
+    }
+}

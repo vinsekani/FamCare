@@ -24,3 +24,28 @@ i{
         margin-top: 2em;
     }
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        width: 90%;
+    }
+
+    .footer {
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+
+    .footer-icons {
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-icons i {
+        font-size: 1.5em;
+    }
+
+    .copy-right p {
+        font-size: 16px;
+    }
+}

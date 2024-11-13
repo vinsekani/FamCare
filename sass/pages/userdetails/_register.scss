@@ -179,3 +179,54 @@
 .input-box.success select {
   border-color: green;
 }
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 80%;
+    padding: 20px;
+    height: auto;
+  }
+
+  #form h1{
+    margin-bottom: -35px;
+  }
+
+  .wrapper h1 {
+    font-size: 28px;
+  }
+
+  .input-box {
+    margin: 20px 0;
+  }
+
+  .input-box input,
+  #county {
+    font-size: 14px;
+    padding: 15px 35px 15px 15px;
+  }
+
+  .input-box i {
+    right: 15px;
+    font-size: 18px;
+  }
+
+  .input-box p{
+    margin-bottom: -5px;
+  }
+
+
+  .wrapper .remember-forgot {
+    font-size: 12px;
+  }
+
+  .wrapper .btn {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .wrapper .register-link {
+    font-size: 12px;
+  }
+}
+

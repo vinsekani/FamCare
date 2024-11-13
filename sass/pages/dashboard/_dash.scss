@@ -254,16 +254,94 @@ height: 500px;
 
 
 
+/* Responsive styling */
 @media (max-width: 768px) {
+  .body-dash {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #sidebar-nav{
+    justify-content: center;
+    ul{
+      display: flex;
+      gap: 20px;
+     li{
+       font-size: 16px;
+     }
+    }
+   }
+
+  .all-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-left {
+    width: 100%;
+    height: auto;
+  }
+
+  .mid-nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   h3{
+    font-size: 10px;
+   }
+  }
+
+  .user-profile{
+    display: none;
+  }
+
   .stats {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .stat-item:nth-child(1) {
     grid-column: auto;
     grid-row: auto;
+    font-size: 1em;
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .visitor-section {
+    width: 100%;
+  }
+
+  .visitor-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .visitor-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .visit-time, .visit-date {
+    text-align: left;
+    font-size: 14px;
   }
 }
+
+
 
 
 

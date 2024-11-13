@@ -179,3 +179,43 @@
 .login-box.success select {
   border-color: green;
 }
+
+@media (max-width: 768px) {
+  .wrapper-login {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .wrapper-login h1 {
+    font-size: 28px;
+  }
+
+  .login-box {
+    margin: 20px 0;
+  }
+
+  .login-box input,
+  #county {
+    font-size: 14px;
+    padding: 15px 35px 15px 15px;
+  }
+
+  .login-box i {
+    right: 15px;
+    font-size: 18px;
+  }
+
+  .wrapper-login .remember-forgot {
+    font-size: 12px;
+    margin-top: 8em;
+  }
+
+  .wrapper-login .btn {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .wrapper-login .register-link {
+    font-size: 12px;
+  }
+}

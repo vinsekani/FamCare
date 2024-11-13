@@ -20,3 +20,32 @@
     }
     
 }
+
+@media (max-width: 768px) {
+    .services {
+      width: 80%; 
+      margin-top: 5em;
+    }
+  
+    .services h3 {
+      font-size: 1.5em;
+    }
+  
+    #services {
+      flex-direction: column;
+      align-items: center;
+      border-bottom: none;
+      margin-top: 20px;
+    }
+  
+    #services p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    #responsive-bold{
+        font-weight: 1000;
+        text-decoration: underline;
+    }
+  }
+  

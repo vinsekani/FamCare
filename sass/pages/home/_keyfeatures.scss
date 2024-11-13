@@ -6,8 +6,6 @@
     margin: 0 auto;
     display: flex;
     margin-top: 10em;
-    // background-color: white;
-   
     justify-content: center;
 }
 
@@ -58,3 +56,28 @@
     height: 0;
     transition: all 0.2s linear;
 }
+
+@media (max-width: 768px) {
+    .key-features {
+      width: 90%;
+      margin-top: 5em;
+      flex-direction: column;
+    }
+  
+    .accordion {
+      width: 80%;
+      margin: 15px auto;
+    }
+  
+    .accordion-content header {
+      font-size: 16px;
+    }
+  
+    .fa-solid {
+      font-size: 1.2em;
+    }
+
+    .key-features-image{
+        display: none;
+    }
+  }

@@ -116,4 +116,71 @@
   .account-actions a i {
     margin-left: 5px;
   }
+
+  @media (max-width: 768px) {
+    .sidebar-accounts {
+      width: 100%;
+      padding: 15px;
+      height: auto;
+    }
+  
+    .linked-accounts {
+      max-width: 100%;
+      padding: 15px;
+      box-shadow: none;
+    }
+  
+    .linked-accounts h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  
+    .active-patients {
+      align-items: flex-start;
+    }
+  
+    .active-patients h4 {
+      font-size: 14px;
+    }
+  
+    .add-button {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  
+    .account-item {
+      align-items: flex-start;
+      padding: 10px 0;
+    }
+  
+    .account-info i {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+  
+    .account-details strong {
+      font-size: 13px;
+    }
+  
+    .account-details p {
+      font-size: 11px;
+    }
+  
+    .account-actions {
+      align-items: flex-start;
+      margin-top: 10px;
+      gap: 10px;
+    }
+  
+    .account-actions .unlink {
+      padding: 4px 8px;
+      font-size: 11px;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .account-actions a {
+      font-size: 11px;
+    }
+  }
   

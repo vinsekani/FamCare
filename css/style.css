@@ -1,3 +1,114 @@
+.sidebar-accounts {
+  width: 300px;
+  background-color: rgb(0, 128, 128);
+  color: #fff;
+  padding: 20px;
+  height: 900px;
+}
+
+#sidebar-nav ul li {
+  font-size: 30px;
+}
+#sidebar-nav ul li a {
+  color: white;
+}
+
+.linked-accounts {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.linked-accounts h3 {
+  text-align: center;
+  color: #00796b;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.active-patients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.active-patients h4 {
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+
+.add-button {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.account-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+}
+
+.account-info i {
+  font-size: 30px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.account-details strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+.account-details p {
+  font-size: 12px;
+  color: #777;
+  margin-top: 2px;
+}
+
+.account-actions {
+  display: flex;
+  align-items: center;
+}
+
+.account-actions .unlink {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.account-actions a {
+  font-size: 12px;
+  color: #00796b;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.account-actions a i {
+  margin-left: 5px;
+}
+
 .body-dash {
   display: flex;
   background-color: rgb(242, 242, 242);
@@ -11,6 +122,10 @@
   color: #fff;
   padding: 20px;
   height: auto;
+}
+
+#sidebar-nav ul li {
+  font-size: 30px;
 }
 
 .sidebar p {
@@ -172,7 +287,6 @@
   gap: 100px;
 }
 
-/* Container styling */
 .visitor-section {
   width: 80%;
   margin: 0 auto;
@@ -185,7 +299,6 @@
   margin-top: 1em;
 }
 
-/* Header styling */
 .visitor-section h3 {
   font-size: 20px;
   font-weight: bold;
@@ -193,7 +306,6 @@
   color: #333;
 }
 
-/* Visitor item styling */
 .visitor-item {
   display: flex;
   align-items: center;
@@ -202,10 +314,9 @@
 }
 
 .visitor-item:last-child {
-  border-bottom: none; /* Remove the last border */
+  border-bottom: none;
 }
 
-/* Visitor photo styling */
 .visitor-photo {
   width: 45px;
   height: 45px;
@@ -213,7 +324,6 @@
   margin-right: 15px;
 }
 
-/* Visitor information styling */
 .visitor-info {
   display: flex;
   flex: 1;
@@ -232,7 +342,6 @@
   color: #777;
 }
 
-/* Time and date styling */
 .visit-time, .visit-date {
   font-size: 18px;
   color: #555;

@@ -143,7 +143,7 @@ margin-right: 15px;
   font-size: 600;
 
 }
-/* Base Styles */
+
 .nav-section {
   position: relative;
 }
@@ -153,9 +153,9 @@ margin-right: 15px;
   gap: 20px;
 }
 
-/* Hamburger Icon Styling */
+
 .hamburger {
-  display: none; /* Hidden on desktop by default */
+  display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
@@ -168,10 +168,10 @@ margin-right: 15px;
   border-radius: 2px;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
   .top-nav {
-      display: none; /* Hide menu items initially */
+      display: none;
       flex-direction: column;
       align-items: center;
       position: absolute;
@@ -184,11 +184,11 @@ margin-right: 15px;
   }
 
   .top-nav.show {
-      display: flex; /* Show menu when 'show' class is active */
+      display: flex; 
   }
 
   .hamburger {
-      display: flex; /* Show hamburger icon on mobile */
+      display: flex;
   }
 
   .login-register-btn {

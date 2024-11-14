@@ -1074,7 +1074,6 @@ footer {
   font-size: 600;
 }
 
-/* Base Styles */
 .nav-section {
   position: relative;
 }
@@ -1084,9 +1083,8 @@ footer {
   gap: 20px;
 }
 
-/* Hamburger Icon Styling */
 .hamburger {
-  display: none; /* Hidden on desktop by default */
+  display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
@@ -1099,10 +1097,9 @@ footer {
   border-radius: 2px;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .top-nav {
-    display: none; /* Hide menu items initially */
+    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -1114,10 +1111,10 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .top-nav.show {
-    display: flex; /* Show menu when 'show' class is active */
+    display: flex;
   }
   .hamburger {
-    display: flex; /* Show hamburger icon on mobile */
+    display: flex;
   }
   .login-register-btn {
     margin-top: 10px;

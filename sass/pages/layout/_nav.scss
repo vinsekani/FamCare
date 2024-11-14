@@ -9,6 +9,14 @@
     text-align: center;
 }
 
+.all-nav{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
 
 .nav-btn{
   position: relative;
@@ -56,6 +64,138 @@ cursor: pointer;
         cursor: pointer;
     }
 }
+
+
+
+.sub-menu-wrap{
+  position: absolute;
+  top: 10%;
+  right: 0.5%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+  max-height: 400px;
+}
+
+.sub-menu{
+  background: $primary-color;
+  padding: 20px;
+  margin: 10px;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3{
+  font-weight: 500;
+}
+
+.user-info img{
+width: 60px;
+border-radius: 50%;
+margin-right: 15px;
+}
+
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: white;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 12px 0;
+}
+
+.sub-menu-link p{
+  width: 100%;
+}
+
+.sub-menu-link i{
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50px;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span{
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+  font-size: 600;
+
+}
+/* Base Styles */
+.nav-section {
+  position: relative;
+}
+
+.top-nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+  display: none; /* Hidden on desktop by default */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .top-nav {
+      display: none; /* Hide menu items initially */
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .top-nav.show {
+      display: flex; /* Show menu when 'show' class is active */
+  }
+
+  .hamburger {
+      display: flex; /* Show hamburger icon on mobile */
+  }
+
+  .login-register-btn {
+      margin-top: 10px;
+  }
+}
+
 
 
 @media (max-width: 768px) {

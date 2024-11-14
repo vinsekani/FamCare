@@ -1,3 +1,5 @@
+
+
 const accordionContent = document.querySelectorAll(".accordion-content")
 accordionContent.forEach((item, index) => {
     let header = item.querySelector("header")
@@ -47,5 +49,11 @@ function toggleOptions(button) {
       </div>
     `;
   }
+}
+
+
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
 }
 

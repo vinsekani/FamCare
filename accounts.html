@@ -9,20 +9,49 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="all-nav">
       <div>
         <img src="images/new_transparent-removebg.png" width="100vh" height="100px">
       </div>
 
-      <div class="mid-nav">
-        <h3>MBAGATHI COUNTY HOSPITAL</h3>
-      </div>
 
       <div class="header-info">
-        <div class="john-profile"> <img src="images/john doe" width="50px" height="50px" alt="john doe"></div>
-        <div class="user-profile"><p>JOHN DOE</p>
-          <p>432156@mbagathi</p></div>
-      </div>
+        <div class="john-profile"> <i class="fa-solid fa-user" style="color: #64676d;" class="user-pic" onclick="toggleMenu()"></i></div>
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/john doe" alt="" width="100vh" >
+              <h3>vincent sekani</h3>
+              <!-- <hr> -->
+            </div>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+              <p>Settings & Privacy</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+              <p>Help & Support</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>
+              <p>Logout</p>
+              <span>></span>
+            </a>
+
+
+          </div>
+          </div>
+      
     </nav>
 
 
@@ -39,48 +68,34 @@
     </div>
     
     <div class="linked-accounts">
-        <h3>Manage your linked Accounts</h3>
-        <div class="active-patients">
+      <h3>Manage your linked Accounts</h3>
+      <div class="active-patients">
           <h4>Active Patients</h4>
-          <div class="add-button">
-            <i class="fa-solid fa-plus"></i>
+          <div class="add-button" onclick="openAddPatientModal(event)">
+              <i class="fa-solid fa-plus"></i>
           </div>
-        </div>
-      
-        <div class="account-item">
-          <div class="account-info">
-            <i class="fa-solid fa-user-circle"></i>
-            <div class="account-details">
-              <strong>John Doe</strong>
-              <p>432156@mbagathi</p>
-            </div>
-          </div>
-          <div class="account-actions">
-            <button class="unlink">unlink</button>
-            <a href="john.html">Go to Account <i class="fa-solid fa-caret-down"></i></a>
-          </div>
-        </div>
-      
-        <div class="account-item">
-          <div class="account-info">
-            <i class="fa-solid fa-user-circle"></i>
-            <div class="account-details">
-              <strong>Sasha Doe</strong>
-              <p>432156@kenyata</p>
-            </div>
-          </div>
-          <div class="account-actions">
-            <button class="unlink">unlink</button>
-            <a href="sasha.html">Go to Account <i class="fa-solid fa-caret-down"></i></a>
-          </div>
-        </div>
       </div>
+  
+      <div id="linkedPatients"></div>
+  </div>
+  
+  <div class="add-patient-modal" id="addPatientModal">
+      <h3>Add Patient by Admission Number</h3>
+      <div class="input-group">
+          <label>Admission Number (ending with @gmail.com)</label>
+          <input type="text" id="admissionNumberInput" pattern="^[0-9]+@gmail\.com$" required>
+      </div>
+      <div class="modal-buttons">
+          <button onclick="addLinkedPatient()">Add</button>
+          <button onclick="closeModal()">Cancel</button>
+      </div>
+  </div>
+  
     
       
 
   </section>
     
+  <script src="./js/dash.js"></script>
     </body>
-
-    <script></script>
 </html>

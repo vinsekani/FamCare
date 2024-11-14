@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="all-nav">
       <div>
         <img src="images/new_transparent-removebg.png" width="100vh" height="100px">
       </div>
@@ -19,10 +19,45 @@
       </div>
 
       <div class="header-info">
-        <div class="john-profile"> <img src="images/john doe" width="50px" height="50px" alt="john doe"></div>
-        <div class="user-profile"><p>Vincent Sekani</p>
-          <p>vinsekani@</p></div>
-      </div>
+        <div class="john-profile"> <i class="fa-solid fa-user" style="color: #64676d;" class="user-pic" onclick="toggleMenu()"></i></div>
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/john doe" alt="" width="100vh" >
+              <h3>vincent sekani</h3>
+              <!-- <hr> -->
+            </div>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+              <p>Settings & Privacy</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+              <p>Help & Support</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>
+              <p>Logout</p>
+              <span>></span>
+            </a>
+
+
+          </div>
+          </div>
+
+
+
     </nav>
 
 
@@ -187,5 +222,5 @@
     
     </body>
 
-    <script></script>
+    <script src="./js/dash.js"></script>
 </html>

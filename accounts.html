@@ -60,9 +60,7 @@
       <nav id="sidebar-nav">
         <ul>
           <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Updates</a></li>
-          <li><a href="accounts.html">Accounts</a></li>
+          <li><a href="sasha.html">Accounts</a></li>
         </ul>
       </nav>
     </div>
@@ -90,9 +88,25 @@
           <button onclick="closeModal()">Cancel</button>
       </div>
   </div>
-  
-    
-      
+
+  <div id="patientDetails" class="patient-details">
+    <h3>Patient Details</h3>
+    <p><strong>Full Name:</strong> <span id="patientFullName">-</span></p>
+    <p><strong>Gender:</strong> <span id="patientGender">-</span></p>
+    <p><strong>DOB:</strong> <span id="patientDob">-</span></p>
+    <p><strong>ID:</strong> <span id="patientId">-</span></p>
+    <p><strong>Admission Date:</strong> <span id="patientAdmissionDate">-</span></p>
+    <ul>
+      <p><strong>Metrics:</strong></p>
+        <li><strong>Blood Pressure:</strong> <span id="bloodPressure">-</span></li>
+        <li><strong>Weight:</strong> <span id="weight">-</span></li>
+        <li><strong>Body Temperature:</strong> <span id="bodyTemperature">-</span></li>
+        <li><strong>Glucose:</strong> <span id="glucose">-</span></li>
+        <li><strong>Heart Rate:</strong> <span id="heartRate">-</span></li>
+        <li><strong>Sleep Time:</strong> <span id="sleepTime">-</span></li>
+    </ul>
+    <button onclick="closePatientDetails()">Close</button>
+</div>
 
   </section>
     

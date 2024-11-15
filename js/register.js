@@ -99,3 +99,4 @@ function showSuccess(input) {
   inputBox.classList.remove("error");
   errorDisplay.style.display = "none";
 }
+

@@ -145,8 +145,52 @@ function addLinkedPatient() {
 
     linkedPatientsContainer.appendChild(accountItem);
     closeModal();
+
+
+    accountItem.innerHTML = `
+    <div class="account-info">
+        <i class="fa-solid fa-user-circle"></i>
+        <div class="account-details">
+            <strong class="patient-name" onclick="viewPatientDetails('${admissionNumber}')">${patient.fullName}</strong>
+            <p>${admissionNumber}</p>
+        </div>
+    </div>
+    <div class="account-actions">
+        <button class="unlink" onclick="unlinkPatient('${admissionNumber}')">Unlink</button>
+        <button onclick="goToPatientAccount('${admissionNumber}')">Go to Account</button>
+    </div>
+`;
+
+linkedPatientsContainer.appendChild(accountItem);
+closeModal();
+
 }
 
-function goToPatientAccount(admissionNumber) {
-    window.location.href = `sasha.html?admissionNumber=${admissionNumber}`;
+function viewPatientDetails(admissionNumber) {
+    const patientData = JSON.parse(localStorage.getItem(admissionNumber));
+
+    if (!patientData) {
+        alert('Patient data not found.');
+        return;
+    }
+
+    document.getElementById('patientFullName').innerText = patientData.fullName;
+    document.getElementById('patientGender').innerText = patientData.gender;
+    document.getElementById('patientDob').innerText = patientData.dob;
+    document.getElementById('patientId').innerText = patientData.id;
+    document.getElementById('patientAdmissionDate').innerText = patientData.admissionDate;
+
+    const metrics = patientData.metrics || {};
+    document.getElementById('bloodPressure').innerText = metrics.bloodPressure || '-';
+    document.getElementById('weight').innerText = metrics.weight || '-';
+    document.getElementById('bodyTemperature').innerText = metrics.bodyTemperature || '-';
+    document.getElementById('glucose').innerText = metrics.glucose || '-';
+    document.getElementById('heartRate').innerText = metrics.heartRate || '-';
+    document.getElementById('sleepTime').innerText = metrics.sleepTime || '-';
+
+    document.getElementById('patientDetails').style.display = 'block';
+}
+
+function closePatientDetails() {
+    document.getElementById('patientDetails').style.display = 'none';
 }

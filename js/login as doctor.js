@@ -34,7 +34,7 @@ function validateLoginForm() {
 
     if (isValid) {
         const allUsers = JSON.parse(localStorage.getItem("allUserData")) || [];
-        console.log("Stored Users:", allUsers);
+        console.log("Stored Users:", allUsers); // Check stored users
 
         const user = allUsers.find(user => 
             user.email === username.value && 
@@ -44,7 +44,7 @@ function validateLoginForm() {
 
         if (user) {
             alert("Login successful!");
-            console.log("User found, redirecting to doctor.html");
+            console.log("User found, redirecting to doctor.html"); // Debugging
             window.location.href = "hospital.html";
         } else {
             console.log("User not found or incorrect credentials.");

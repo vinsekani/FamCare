@@ -20,9 +20,7 @@
     }
    }
 
-   .sidebar{
-    height: 950px;
-   }
+
 .category-container {
     display: flex;
     flex-wrap: wrap;
@@ -135,77 +133,4 @@ padding: 50px 50px;
     border-radius: 10px;
     color: white;
     cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .body-hospital {
-        padding: 1em;
-    }
-
-    #sidebar-nav{
-        ul{
-         li{
-          margin-top: 1em;
-           font-size: 16px;
-         a{
-            color: white;
-         }
-         }
-        }
-       }
-
-    .sidebar {
-        height: auto;
-        padding: 1em;
-    }
-
-    .category-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .category-box {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .category-box h4 {
-        font-size: 18px;
-    }
-
-    .category-box p {
-        font-size: 24px;
-    }
-
-    .category-box button {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-
-    .account-actions button {
-        padding: 5px 15px;
-        font-size: 14px;
-    }
-
-    .patient-list {
-        font-size: 16px;
-        padding: 4px;
-    }
-
-    .add-patient-modal, .update-metrics-modal {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .input-group input {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .modal-buttons button {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
 }

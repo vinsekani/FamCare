@@ -7,6 +7,7 @@
 }
 
 #sidebar-nav ul li {
+  margin-top: 1em;
   font-size: 30px;
 }
 #sidebar-nav ul li a {
@@ -73,6 +74,7 @@
   display: block;
   font-size: 14px;
   color: #333;
+  cursor: pointer;
 }
 
 .account-details p {
@@ -109,6 +111,39 @@
   margin-left: 5px;
 }
 
+.patient-details {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 50%;
+  border-radius: 8px;
+}
+
+.patient-details button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: rgb(0, 128, 128);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.patient-details ul {
+  margin-top: 2em;
+}
+
+.patient-details button:hover {
+  background-color: #0056b3;
+}
+
 @media (max-width: 768px) {
   .sidebar-accounts {
     width: 100%;
@@ -119,6 +154,16 @@
     max-width: 100%;
     padding: 15px;
     box-shadow: none;
+  }
+  #sidebar-nav {
+    justify-content: center;
+  }
+  #sidebar-nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  #sidebar-nav ul li {
+    font-size: 16px;
   }
   .linked-accounts h3 {
     font-size: 16px;
@@ -667,6 +712,7 @@
   width: 100%;
   height: 80vh;
   background: url(/images/pexels-rdne-6129683.jpg);
+  background: url(https://github.com/vinsekani/FamCare/blob/master/images/pexels-rdne-6129683.jpg?raw=true);
   position: relative;
   padding: 0 5%;
   display: flex;
@@ -1181,6 +1227,7 @@ footer {
   min-height: 100vh;
   background-position: center;
   background: url(../../../images/pexels-rdne-6129683.jpg);
+  background: url(https://github.com/vinsekani/FamCare/blob/master/images/pexels-rdne-6129683.jpg?raw=true);
   background-size: cover;
 }
 
@@ -1408,6 +1455,7 @@ footer {
   min-height: 100vh;
   background-position: center;
   background: url(../../../images/pexels-rdne-6129683.jpg);
+  background: url(https://github.com/vinsekani/FamCare/blob/master/images/pexels-rdne-6129683.jpg?raw=true);
   background-size: cover;
 }
 
@@ -1660,10 +1708,6 @@ body {
   color: white;
 }
 
-.sidebar {
-  height: 950px;
-}
-
 .category-container {
   display: flex;
   flex-wrap: wrap;
@@ -1778,61 +1822,4 @@ body {
   border-radius: 10px;
   color: white;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .body-hospital {
-    padding: 1em;
-  }
-  #sidebar-nav ul li {
-    margin-top: 1em;
-    font-size: 16px;
-  }
-  #sidebar-nav ul li a {
-    color: white;
-  }
-  .sidebar {
-    height: auto;
-    padding: 1em;
-  }
-  .category-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-  }
-  .category-box {
-    width: 100%;
-    padding: 10px;
-  }
-  .category-box h4 {
-    font-size: 18px;
-  }
-  .category-box p {
-    font-size: 24px;
-  }
-  .category-box button {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-  .account-actions button {
-    padding: 5px 15px;
-    font-size: 14px;
-  }
-  .patient-list {
-    font-size: 16px;
-    padding: 4px;
-  }
-  .add-patient-modal, .update-metrics-modal {
-    width: 90%;
-    padding: 15px;
-  }
-  .input-group input {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .modal-buttons button {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
 }
